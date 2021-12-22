@@ -96,10 +96,10 @@ We have put analysis results *random_attention_score_wrt_layer.pt* and *bert_att
 python plot_heatmap.py
 ```
 We will get: 
-![Attetion Visualization](figures/attention.png)
+![Attetion Visualization](figures/heatmap.png)
 
 
-##Reference
+## Reference
 Some of our code are based on https://github.com/galsang/BiDAF-pytorch
 
 
