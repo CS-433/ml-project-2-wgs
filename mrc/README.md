@@ -76,3 +76,8 @@ We have put analysis results *random_attention_score_wrt_layer.pt* and *bert_att
 ```bash
 python plot_heatmap.py
 ```
+
+##Reference
+Some of our code are based on https://github.com/galsang/BiDAF-pytorch
+
+
