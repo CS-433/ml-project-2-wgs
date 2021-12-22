@@ -67,11 +67,9 @@ Note: Models will be saved under **saved_models**.
 |--------------|:----------:|:----------:|:----------:|
 | None | none | 43.85 | 31.30 |
 | Random | none | 31.30 | 42.85 |
-|--------------|:----------:|:----------:|:----------:|
 | BERT (base) | encoder | 47.46 | **59.97** |
 | RoBERTa (base) | encoder | 47.16 | 59.39 |
 | GPT-2 (small) | decoder | 40.69 | 53.45 |
-|--------------|:----------:|:----------:|:----------:|
 | BART (base) | encoder | **47.52** | 59.83 |
 | BART (base) | decoder | 47.24 | 59.72 |
 | BART (base) | encoder + decoder | 44.86 | 57.34|
@@ -97,6 +95,9 @@ We have put analysis results *random_attention_score_wrt_layer.pt* and *bert_att
 ```bash
 python plot_heatmap.py
 ```
+We will get: 
+![Attetion Visualization](figures/attention.png)
+
 
 ##Reference
 Some of our code are based on https://github.com/galsang/BiDAF-pytorch
