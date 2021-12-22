@@ -83,7 +83,16 @@ python -m allennlp.run train esim/bart_both.json -s bart_both --include-package 
 ```
 
 ## Experimental Results
-
+| Pretrained LM | Transformer Type | Accuracy |
+|--------------|:----------:|:----------:|
+| None | none | 31.61 | 
+| Random | none | 20.97 | 
+| BERT (base) | encoder | **34.81**  | 
+| RoBERTa (base) | encoder | 33.60 |
+| GPT-2 (small) | decoder | 25.31 |
+| BART (base) | encoder | 33.74  | 
+| BART (base) | decoder | 32.51 | 
+| BART (base) | encoder + decoder | 32.92 |
 
 
 ## Reference
