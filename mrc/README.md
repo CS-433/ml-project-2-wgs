@@ -100,6 +100,6 @@ We will get:
 
 
 ## Reference
-Some of our code are based on https://github.com/galsang/BiDAF-pytorch
+- https://github.com/galsang/BiDAF-pytorch
 
 
