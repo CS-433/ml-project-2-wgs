@@ -65,7 +65,7 @@ Note: Models will be saved under **saved_models**.
 
 | Pretrained LM | Transformer Type | EM | F1 |
 |--------------|:----------:|:----------:|:----------:|
-| None | none | 43.85 | 31.30 |
+| None | none | 43.85 | 56.43 |
 | Random | none | 31.30 | 42.85 |
 | BERT (base) | encoder | 47.46 | **59.97** |
 | RoBERTa (base) | encoder | 47.16 | 59.39 |
