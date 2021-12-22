@@ -96,5 +96,5 @@ python -m allennlp.run train esim/bart_both.json -s bart_both --include-package 
 
 
 ## Reference
-https://github.com/jonathanherzig/commonsenseqa
+Some of our code are based on https://github.com/jonathanherzig/commonsenseqa
 
