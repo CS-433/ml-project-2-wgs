@@ -57,6 +57,27 @@ python run.py --lm-km-name facebook/bart-base --lm-km-type both
 ```
 Note: Models will be saved under **saved_models**.
 
+### Model Overview
+![Model Overview](figures/model_mrc.png)
+
+
+### Experimental Results
+
+| Pretrained LM | Transformer Type | EM | F1 |
+|--------------|:----------:|:----------:|:----------:|
+| None | none | 43.85 | 31.30 |
+| Random | none | 31.30 | 42.85 |
+|--------------|:----------:|:----------:|:----------:|
+| BERT (base) | encoder | 47.46 | **59.97** |
+| RoBERTa (base) | encoder | 47.16 | 59.39 |
+| GPT-2 (small) | decoder | 40.69 | 53.45 |
+|--------------|:----------:|:----------:|:----------:|
+| BART (base) | encoder | **47.52** | 59.83 |
+| BART (base) | decoder | 47.24 | 59.72 |
+| BART (base) | encoder + decoder | 44.86 | 57.34|
+
+
+
 ### Attention Score Analysis
 Need to train Random and BERT (base),
 and get *bert.pt*, *bert_ema.pkl*, *random.pt*, *random_ema.pkl* saved under **saved_models**.
